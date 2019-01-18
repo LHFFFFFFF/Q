@@ -49,8 +49,23 @@ int main(){
             scanf("%c",&x);
             scanf("%c",&x);
         }
-        if(code == 2){
-            
+        if(code == 2)
+        {
+         if (index > 0)
+         {
+             index--;
+             printf("shanchuchenggong,dianjihuichejixu\n");
+             char x;
+             scanf("%c",&x);
+             scanf("%C",&x);
+         }
+         else
+         {
+             printf("wuxueshengxinxi,shanchushibai,dianjihuichejixu\n");
+             char x;
+             scanf("%c",&x);
+             scanf("%C",&x);
+         }
         }
         if(code == 3){
             printf("suoyouxueshengchengjiruxia:\n");
