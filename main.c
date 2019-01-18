@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include<math.h>
 
 struct student
 {
@@ -80,7 +81,20 @@ int main(){
             scanf("%C",&x);
         }
         if(code == 4){
-            
+            for(int i = 0;i < index; i++)
+            {
+                int sum = 0;
+                sum=arr[i].yuwen+arr[i].shuxue+arr[i].yingyu;
+
+                if(sum<180)
+                {
+                    printf("di%dmingxuesheng%schengjibujige\n",i+1,arr[i].name);
+                }
+            }
+            printf("shaixuanwancheng,dianjihuichejixu\n");
+            char x;
+            scanf("%c",&x);
+            scanf("%c",&x);
         }
         if(code == 5){
             
