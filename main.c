@@ -128,8 +128,27 @@ int main(){
             scanf("%c",&x);
             scanf("%c",&x);
         }
-        if(code == 7){
-            
+        if(code == 7)
+        {
+            double aver;
+            double pingjun = 0;
+            int IDD = 0;
+
+            for (int i = 0; i < index; i++)
+            {
+                aver = (arr[i].yuwen + arr[i].shuxue + arr[i].yingyu) / 3;
+
+                if(pingjun < aver)
+                {
+                    pingjun = aver;
+                    IDD = i + 1;
+                }
+            }
+            printf("di%dmingxuesheng%sdepingjunchengjizuigao,zuigaowei%lf\n",IDD, arr[IDD - 1].name, pingjun);
+            printf("shaixuanwancheng,dianjihuichejixu\n");
+            char x;
+            scanf("%c",&x);
+            scanf("%c",&x);
         }
         if(code == 8){
             printf("yuichuxitong\n");
